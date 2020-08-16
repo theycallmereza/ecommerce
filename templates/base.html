@@ -11,6 +11,32 @@
 </head>
 <body>
 
+<!-- Start header -->
+<header>
+    <div class="container">
+        <div class="icon-container">
+            <a href="#"><img src="{% static 'img/user.svg' %}" alt=""></a>
+            <a class="shopping-cart" href="#"><img src="{% static 'img/shopping-cart.svg' %}" alt=""><span
+                    class="badge">3</span></a>
+        </div>
+
+        <form>
+            <input type="text" placeholder="جتسجو">
+        </form>
+
+        <div class="logo">
+            <a href="#">Unicoo</a>
+        </div>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#">درباره ما</a></li>
+            <li><a href="#">تماس با ما</a></li>
+            <li><a href="#">صفحه اصلی</a></li>
+        </ul>
+    </nav>
+</header>
+
 {% block content %}
 
 {% endblock %}

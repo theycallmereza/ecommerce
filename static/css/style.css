@@ -1,2 +1,84 @@
-h1 {
-  color: red; }
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap");
+@font-face {
+  font-family: IranSans;
+  src: url("../fonts/IRANSansWeb.ttf") format("truetype"); }
+
+@font-face {
+  font-family: IranSansBold;
+  src: url("../fonts/IRANSansWeb_Bold.ttf") format("truetype"); }
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  font-family: 'IranSans', sans-serif;
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; }
+
+body {
+  background-color: #faf3dd; }
+
+header {
+  display: grid;
+  background-color: #fff; }
+  header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 10rem; }
+    header .container .logo a {
+      font-size: 2rem;
+      font-family: 'Open Sans', sans-serif;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      color: #68b0ab; }
+    header .container form {
+      width: 40%; }
+      header .container form input {
+        width: 100%;
+        border-radius: 5px;
+        border: 1px solid #68b0ab;
+        height: 4rem;
+        text-align: right;
+        padding-right: 1.5rem;
+        background-color: #f0f0f0; }
+    header .container .icon-container a {
+      text-decoration: none;
+      position: relative; }
+      header .container .icon-container a .badge {
+        position: absolute;
+        top: -15px;
+        right: 5px;
+        background-color: #68b0ab;
+        border-radius: 50%;
+        color: #fff;
+        padding: 0 5px; }
+      header .container .icon-container a img {
+        width: 2rem;
+        height: 2rem;
+        margin: 0 1.5rem; }
+
+nav {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+  nav ul {
+    list-style: none; }
+    nav ul li {
+      display: inline-block;
+      height: 100%;
+      padding: 1rem 1.5rem;
+      font-size: 1.4rem;
+      border-bottom: 2px solid transparent;
+      transition: all .1s; }
+      nav ul li a {
+        text-decoration: none; }
+        nav ul li a:visited, nav ul li a:active, nav ul li a:link {
+          color: #68b0ab; }
+      nav ul li:hover {
+        border-bottom: 2px solid #68b0ab; }

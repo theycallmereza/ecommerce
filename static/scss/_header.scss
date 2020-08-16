@@ -1,0 +1,57 @@
+header {
+  display: grid;
+  background-color: $color-white;
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 10rem;
+
+    .logo a {
+      font-size: 2rem;
+      font-family: 'Open Sans', sans-serif;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      color: $color-4;
+    }
+
+    form {
+      width: 40%;
+
+      input {
+        width: 100%;
+        border-radius: 5px;
+        border: 1px solid $color-4;
+        height: 4rem;
+        text-align: right;
+        padding-right: 1.5rem;
+        background-color: #f0f0f0;
+      }
+    }
+
+    .icon-container {
+      a {
+        text-decoration: none;
+        position: relative;
+
+        .badge {
+          position: absolute;
+          top: -15px;
+          right: 5px;
+          background-color: $color-4;
+          border-radius: 50%;
+          color: $color-white;
+          padding: 0 5px;
+        }
+
+        img {
+          width: 2rem;
+          height: 2rem;
+          margin: 0 1.5rem;
+        }
+      }
+    }
+  }
+}
