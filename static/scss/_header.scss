@@ -53,5 +53,27 @@ header {
         }
       }
     }
+
+    @media (max-width: 768px) {
+      .icon-container {
+        a {
+          img {
+            margin: 0 1rem;
+          }
+        }
+      }
+      form {
+        width: 60%;
+      }
+      .logo {
+        display: none;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      padding: 3rem 2rem;
+    }
   }
 }
