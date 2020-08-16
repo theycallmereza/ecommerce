@@ -11,3 +11,4 @@ class User(AbstractUser):
     mobile_number = models.CharField(_("Mobile Number"), max_length=11, unique=True, validators=[MobileValidator])
 
     USERNAME_FIELD = 'mobile_number'
+    REQUIRED_FIELDS = ['email', 'username']
