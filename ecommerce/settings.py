@@ -45,6 +45,7 @@ INSTALLED_APPS = [
 
 LOCAL_APPS = [
     'apps.users',
+    'apps.shop',
 ]
 
 THIRD_PARTY_APPS = []
@@ -133,9 +134,9 @@ USE_TZ = True
 
 STATICFILES_STORAGE = 'whitenoise.storage.CompressedManifestStaticFilesStorage'
 
-# STATICFILES_DIRS = [
-#     BASE_DIR / 'static',
-# ]
+STATICFILES_DIRS = [
+    BASE_DIR / 'static',
+]
 
 STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
