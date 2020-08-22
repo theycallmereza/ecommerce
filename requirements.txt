@@ -16,6 +16,7 @@ django==3.1               # via -r requirements.in, django-allauth, django-debug
 gunicorn==20.0.4          # via -r requirements.in
 idna==2.10                # via requests
 oauthlib==3.1.0           # via requests-oauthlib
+pillow==7.2.0             # via -r requirements.in
 psycopg2==2.8.5           # via -r requirements.in
 python3-openid==3.2.0     # via django-allauth
 pytz==2020.1              # via django
