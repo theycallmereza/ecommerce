@@ -9,6 +9,3 @@ from .validators import MobileValidator
 class User(AbstractUser):
     """Customize default Django user model"""
     mobile_number = models.CharField(_("Mobile Number"), max_length=11, unique=True, validators=[MobileValidator])
-
-    USERNAME_FIELD = 'mobile_number'
-    REQUIRED_FIELDS = ['email', 'username']
