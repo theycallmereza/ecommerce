@@ -4,6 +4,7 @@ from django.conf import settings
 
 
 class Address(BaseModel):
+    user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     address = models.CharField(max_length=255)
     postal_code = models.CharField(max_length=20)
     state = models.CharField(max_length=100)
@@ -13,13 +14,16 @@ class Address(BaseModel):
         verbose_name_plural = "Addresses"
         verbose_name = "Address"
 
+    def __str__(self):
+        return self.user.email
+
 
 class Order(BaseModel):
     customer = models.ForeignKey(settings.AUTH_USER_MODEL,
                                  on_delete=models.CASCADE)
     first_name = models.CharField(max_length=50)
     last_name = models.CharField(max_length=50)
-    ordered = models.DateTimeField()
+    ordered = models.DateTimeField(null=True, blank=True)
     paid = models.BooleanField(default=False)
 
     class Meta:

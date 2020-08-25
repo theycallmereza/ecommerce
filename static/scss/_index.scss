@@ -1,0 +1,38 @@
+.cards-container {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  margin-top: 50px;
+  padding: 0 10rem;
+
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    padding: 2rem 1rem;
+    background-color: $color-white;
+    height: 300px;
+    width: 100%;
+
+    &:hover {
+      box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+    }
+
+    .card-img {
+      width: 100%;
+      height: 200px;
+    }
+
+    .card-body {
+    }
+  }
+
+  @media (max-width: 996px) {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 5rem;
+  }
+  @media (max-width: 596px) {
+    grid-template-columns: 1fr;
+  }
+}
